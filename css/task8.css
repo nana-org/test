@@ -2,6 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
+.row{
+	display: block;
+}
 [class*='col-']{
 	float: left;
 	height: 60px;

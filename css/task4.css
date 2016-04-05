@@ -9,19 +9,20 @@
 	margin-left: -200px;
 	overflow: hidden;
 }
-.top-left,
-.right-bottom{
+.top-left{
 	width: 100px;
 	height: 100px;
 	border-radius: 50px;
-	background: #fc0;	
-}
-.top-left{
+	background: #fc0;
 	position: absolute;
 	top: -50px;
 	left: -50px;
 }
 .right-bottom{
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background: #fc0;
 	position: absolute;
 	right: -50px;
 	bottom: -50px;
