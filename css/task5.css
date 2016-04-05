@@ -1,109 +1,127 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
+
 h1,
 h2,
 h5,
-p{
+p {
 	font-family: "微软雅黑";
 	line-height: 24px;
 }
-h1{
+
+h1 {
 	font-size: 20px;
-	margin:10px 0;
+	margin: 10px 0;
 }
-h2{
+
+h2 {
 	font-size: 16px;
 	margin: 10px 0;
 	color: #707070;
 }
-h5{
+
+h5 {
 	font-size: 12px;
 	color: #707070;
 	margin: 10px 0;
 }
-p{
+
+p {
 	font-size: 14px;
 	text-indent: 2em;
 }
+
 a:link,
 a:visited,
 a:hover,
-a:active{
+a:active {
 	text-decoration: underline;
 	color: blue;
-	
 }
-span{
+
+span {
 	line-height: 32px;
 }
-.left{
-	widows: 70%;
+
+.left {
+	width: 98%;
 	float: left;
 	height: 2000px;
 	margin: 20px;
 }
-.top{
-	height:75px;
+
+.top {
+	height: 75px;
 	background: #333;
 }
-.top img{
+
+.top img {
 	margin-left: 38px;
 	float: left;
 }
-.top ul li{
+
+.top ul li {
 	float: right;
 	margin-right: 20px;
 	margin-top: 38px;
 	color: white;
-	list-style-type:none ;
-	
+	list-style-type: none;
 }
-.top ul li:hover{
+
+.top ul li:hover {
 	color: #999;
 	cursor: pointer;
 }
-.point{
+
+.point {
 	width: 6px;
-	height:6px;
+	height: 6px;
 	border-radius: 25px;
 	float: right;
 	background: black;
 	margin-top: 46px;
 	margin-right: 8px;
 }
-.main{
+
+.main {
 	background: #dedede;
-	width:100%;
+	width: 100%;
 	height: 2740px;
 	overflow: auto;
 	position: relative;
 }
-.case1{
+
+.case1 {
 	width: 70%;
 	height: 810px;
 	background: white;
-	box-shadow:4px 4px 4px #aaaaaa;
-	-webkit-box-shadow:4px 4px 4px #aaaaaa; 
-    -moz-box-shadow:4px 4px 4px #aaaaaa; 
+	box-shadow: 4px 4px 4px #aaaaaa;
+	-webkit-box-shadow: 4px 4px 4px #aaaaaa;
+	-moz-box-shadow: 4px 4px 4px #aaaaaa;
 	padding: 20px;
 	margin-bottom: 20px;
 }
-.height1{
-	height:640px;
+
+.height1 {
+	height: 640px;
 }
-.height2{
-	height:540px
+
+.height2 {
+	height: 540px
 }
-.height3{
-	height:460px
+
+.height3 {
+	height: 460px
 }
-.case1 img{
+
+.case1 img {
 	width: 340px;
 	height: 280px;
 }
-.picture{
+
+.picture {
 	padding: 10px;
 	width: 180px;
 	height: 200px;
@@ -112,105 +130,126 @@ span{
 	margin: 10px;
 }
 
-.picture h5{
+.picture h5 {
 	text-align: center;
 }
-.picture img{
+
+.picture img {
 	width: 180px;
 	height: 156px;
 }
-table{
-	width:80% ;
+
+table {
+	width: 80%;
 	height: 180px;
 }
-th{
+
+th {
 	background: #333;
-	height:30px;
+	height: 30px;
 }
-tfoot{
+
+tfoot {
 	background: #999;
 }
-td{
+
+td {
 	border: 1px solid #999;
 }
-.word{
+
+.word {
 	font-weight: bold;
 	margin-bottom: 12px;
 }
-.right{
+
+.right {
 	float: right;
-	width:20%;
+	width: 20%;
 	height: 600px;
 }
-.side{
+
+.side {
 	width: 22%;
 	height: 540px;
 	background: white;
-	box-shadow:4px 4px 4px #aaaaaa;
+	box-shadow: 4px 4px 4px #aaa;
 	position: absolute;
 	top: 20px;
 	left: 74%;
 }
-.title{
+
+.title {
 	border-left: 2px solid #DEDEDE;
 	height: 40px;
 	width: 80%;
 	margin: 0 auto;
 }
-.title h1{
+
+.title h1 {
 	font-size: 18px;
 	text-align: center;
 	line-height: 40px;
 }
-.line{
+
+.line {
 	width: 80%;
-	margin:20px auto
+	margin: 20px auto
 }
-.line-left{
+
+.line-left {
 	width: 40%;
 	float: left;
 }
-.line-left p{
+
+.line-left p {
 	text-indent: 0;
 	float: right;
 }
-input{
+
+input {
 	margin: 2px 10px;
 }
-.line .mark{
+
+.line .mark {
 	width: 58%;
 	float: right;
 	margin-top: -10px;
 }
-.empty{
+
+.empty {
 	margin-top: 14px;
 }
-.sex{
+
+.sex {
 	margin-top: 6px;
 	margin-right: -4px;
 }
-.citys{
+
+.citys {
 	margin: 4px 8px;
 }
-.hobby{
+
+.hobby {
 	margin: 4px 2px;
 }
-.button{
-	background:#3355d0;
+
+.button {
+	background: #3355d0;
 	width: 180px;
 	height: 30px;
 	border: 1px #999 solid;
-	border-radius:12px;
-	-moz-border-radius:12px;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
 	margin: 0 120px;
 }
-.bottom{
+
+.bottom {
 	height: 100px;
 	width: 100%;
 	background: black;
 }
-.bottom span{
+
+.bottom span {
 	color: white;
 	margin: 0 800px;
-
 }
