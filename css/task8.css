@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-[class*='col-']{
+[class*='col-']{		/*这里用的不错，我也学到一招*/
 	float: left;
 	height: 60px;
 	background:burlywood;
@@ -43,3 +43,11 @@
 	}
 	
 }
+/* 清除浮动 当然用overflow也可以*/
+.case:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*你的响应式布局有点问题，可以学着bootstrap的12栏布局，我传了我的在css文件夹里，你看看*/

@@ -3,6 +3,7 @@
 	padding: 0;
 }
 
+/*这种代码复用的方式，利用的不错*/
 h1,
 h2,
 h5,
@@ -44,7 +45,11 @@ a:active {
 span {
 	line-height: 32px;
 }
-
+/*	命名的话，头部用header ,左边如果是  
+ *  内容就用container,包裹里面的小块内容可以用content , 右边是侧边栏就用 side，底部 footer ，导航 nav ,或者 navigation
+ * 	你如果用left,right这些，别人可能就不能清楚的知道含义
+ *	
+ **/
 .left {
 	width: 98%;
 	float: left;
@@ -92,14 +97,14 @@ span {
 	overflow: auto;
 	position: relative;
 }
-
+/*还有少用1，2，3这种方式。可以定义一个主类  然后用  :nth-child(n)，或者first,last*/
 .case1 {
 	width: 70%;
 	height: 810px;
 	background: white;
-	box-shadow: 4px 4px 4px #aaaaaa;
-	-webkit-box-shadow: 4px 4px 4px #aaaaaa;
-	-moz-box-shadow: 4px 4px 4px #aaaaaa;
+	box-shadow: 4px 4px 4px #aaa;
+	-webkit-box-shadow: 4px 4px 4px #aaa;
+	-moz-box-shadow: 4px 4px 4px #aaa;
 	padding: 20px;
 	margin-bottom: 20px;
 }
@@ -208,6 +213,7 @@ td {
 
 input {
 	margin: 2px 10px;
+	outline: none;	/*这个能去掉chrome 默认的边框线*/
 }
 
 .line .mark {
@@ -238,8 +244,10 @@ input {
 	width: 180px;
 	height: 30px;
 	border: 1px #999 solid;
-	border-radius: 12px;
-	-moz-border-radius: 12px;
+	/*可以加上 webkit*/
+	-webkit-border-radius:12px;
+	  -moz-border-radius: 12px;
+		   border-radius: 12px;
 	margin: 0 120px;
 }
 

@@ -35,6 +35,16 @@
 	margin-left: 240px;
 	margin-right: 140px;
 }
-#imges{
+// #imges{
+// 	margin-bottom:0;
+// }
+/*试试这种方式，就不用去定义html结构了   了解一下 :first-child,:last-child,:nth-child(n) 这几个选择器*/
+.right img:last-child{
 	margin-bottom:0;
 }
+
+
+/* 	整体实现的思路不错，比我的实现方式更省代码，
+ * 试试将主要内容放在最开始（这样会利于SEO优化，实际中一般是这样），
+ *	这样做之后你就可以看看圣杯布局，和双翼布局 
+ * */

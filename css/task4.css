@@ -7,6 +7,10 @@
 	left:50%;
 	margin-top: -100px;
 	margin-left: -200px;
+	/*可以试试我下面这种方式，这在不确定高度的时候，是一种很好的居中方式*/
+	// -webkit-transform:translate(-50%,-50%);
+	//    -moz-transform:translate(-50%,-50%);
+	// 		transform:translate(-50%,-50%);
 	overflow: hidden;
 }
 .top-left,
