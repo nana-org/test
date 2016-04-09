@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>响应式布局-新学的</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a:link,
+			a:visited,
+			a:hover,
+			a:active{
+				text-decoration: none;
+				color: #000;
+			}
+			.main{
+            border-right: 1px solid #666;
+            border-top:1px solid #666;
+            display: -webkit-inline-flex;
+            display: -ms-inline-flex;
+            display: -moz-inline-flex;
+            display: inline-flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            flex-wrap: wrap;          
+            }
+            .main li {
+            -webkit-flex-grow:1;
+            -ms-flex-grow:1;
+            -moz-flex-grow:1;
+            flex-grow:1;
+            list-style: none;
+            border-left: 1px solid #666;
+            border-bottom:1px  solid #666;
+            text-align: center;
+            line-height: 80px;
+            background-color: #999;
+            padding: 20px 140px;
+            font-size: 18px;
+            transition:all .5s;
+			-moz-transition: all; .5s;
+			-webkit-transition: all .5s;
+            }
+            .main li:hover{
+				background: #ccc;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="main">
+			<li><a href="task3.html">task3</a></li>
+			<li><a href="task4.html">task4</a></li>
+			<li><a href="task5.html">task5</a></li>
+			<li><a href="task6.html">task6</a></li>
+			<li><a href="task8.html">task8</a></li>
+			<li>none</li>
+			<li>none</li>
+			<li>none</li>
+			<li>none</li>
+			<li>none</li>
+		</ul>
+	</body>
+
+</html>
