@@ -9,8 +9,9 @@
 				position: absolute;
 				top: 50%;
 				right: 50%;
-				bottom: 50%;
-				margin: -120px auto;
+				transform:translate(-50%,-50%);
+				-webkit-transform:translate(-50%,-50%);
+	            -moz-transform:translate(-50%,-50%);
 			}
 			.main li{
 				padding: 20px;
@@ -19,11 +20,9 @@
 				list-style-type: none;
 				text-align: center;
 				cursor: pointer;
-				-webkit-transition: all .5s;	/*chrome,safari ==== 重要******写成all比较省事*/
-				-moz-transition: all .5s;;		/*火狐 ==== 重要*/	
-				-ms-transition: all .5s;;		/*IE9*/
-				-o-transition: all .5s;		/*opera*/
-				transition: all .5s;
+				transition:all .5s;
+				-moz-transition: all; .5s;
+				-webkit-transition: all .5s;
 			}
 			.main li:hover{
 				background: #ccc;
@@ -35,16 +34,6 @@
 				text-decoration: none;
 				color: #000;
 			}
-			/*这里你可以这样写***当然主要就是每个区域你前面最好加上.main,这样不会形成全局污染，
-			像 a 这种全局需要定义的，就写成全局，
-			,养成习惯，虽然这个代码很少*/
-			/*.main a{
-				text-decoration: none;
-				color: #000;	
-			}
-			.main li:hover{
-				background: #ccc;	
-			}*/
 		</style>
 	</head>
 	<body>
@@ -53,6 +42,7 @@
 				<li><a href="web/task3.html">task3</a></li>
 				<li><a href="web/task4.html">task4</a></li>
 				<li><a href="web/task5.html">task5</a></li>
+				<li><a href="web/task6.html">task6</a></li>
 				<li><a href="web/task8.html">task8</a></li>
 			</ul>
 		</div>
