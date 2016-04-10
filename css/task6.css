@@ -16,7 +16,7 @@ li {
 }
 
 h1 {
-	font-family: "微软雅黑";
+	font-family: "微软雅黑";　/*这里可以直接提到ｂｏｄｙ，主字体是什么样，要用黑体的地方加上黑体，然后又能省两句代码*/
 	font-size: 16px;
 	text-decoration: underline;
 }
@@ -41,7 +41,7 @@ time,
 }
 
 .header p {
-	color: white;
+	color: white;　/*＃ｃｃｃ　个人感觉好写一点，嘿嘿*/
 }
 
 time {
@@ -380,3 +380,5 @@ span {
 .indent {
 	text-indent: 2em;
 }
+
+/*ｃｓｓ写的有进步哦*/

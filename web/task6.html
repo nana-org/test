@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="UTF-8">
 		<title>模拟报纸排版</title>
@@ -15,7 +14,54 @@
 				</div>
 				<time>2016.03</time>
 			</div>
-			<div class="container-top">
+			<!-- 这里的布局结构命名你可以按区域来划分，
+				比如这里你想表达的是内容的上部分，其实这里我们可以把这个区域看作是个banner区域，
+				然后你就不用使用container-top的名称了，这里就使用banner,表示了整个区域，
+				然后后面的pic,content加上前缀：banner-pic,banner-content类似的,按区域划分来命名，防止后面的命名冲突（pic，content后面想用就不能用了，除了加权值） ex:-->
+			<!-- 新添内容 -->
+			<div class="banner">	<!-- 实际中模块是分的很开的，所以不一定用banner哈，一个单词能代表这个模块的 -->
+				<div class="banner-content">
+					<div class="banner-pic">	<!-- 这里按规则来说应该是写成banner-content-pic，但是写法太长，css名称长了会导致可读性很差，所以我们能省就省，区域是对的就OK -->
+						<div></div>
+						<div></div>
+					</div>
+					<!-- /.banner-pic -->
+					<div class="banner-article">
+						<div class="banner-item banner-item-1">	
+						<!-- 这里的banner-item是这几个小模块的公共样式，然后banner-item1这些当然就是为了定义它子元素不同标题颜色的，
+						css(
+							.banner-item-1>h3{} 
+							.banner-item-2>h3{} 
+							.banner-item-3>h3{}
+						) 
+						比你那种定义方式要好点噢  嘿嘿
+						提高了css的可读性
+						-->
+							<h3></h3>
+							<p></p>
+						</div>
+						<!-- /.banner-item banner-item-1 -->
+						<div class="banner-item banner-item-2">
+							<h3></h3>
+							<p></p>
+						</div>
+						<!-- /.banner-item banner-item-2 -->
+						<div class="banner-item banner-item-3">
+							<h3></h3>
+							<p></p>
+						</div>
+						<!-- /.banner-item banner-item-3 -->
+					</div>
+					<!-- /.banner-article -->
+				</div>
+				<!-- /.banner-content -->
+				<div class="banner-side"><!-- 这里面没什么了 --></div>
+				<!-- /.banner-side -->
+			</div>
+			<!-- /.banner -->
+			<!-- ./新添内容 -->
+
+			<div class="container-top">		
 				<div class="content">
 					<div class="pic">
 						<div></div>
@@ -23,7 +69,9 @@
 					</div>
 					<div class="article">
 						<div>
-							<h1 class="color-what">What</h1>
+							<h1 class="color-what">What</h1>	
+							<!-- 这里不要使用h1,因为h1 一个页面只能出现一个(html语义化)，我们可以用h3, 如上我写的。
+							这里也不要使用color-what了，这样一个一个命名麻烦，-->
 							<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前</p>
 						</div>
 						<div>
@@ -32,17 +80,17 @@
 						</div>
 						<div>
 							<h1 class="color-how">How</h1>
-							<p>前端前端前端前端</br>前端前端前端前端前端前</br>端前端前端前端</p>
-							</br>
+							<p>前端前端前端前端<br>前端前端前端前端前端前<br>端前端前端前端</p>
+							<br>
 							<p>What------<i>40%</i></p>
 							<p>What------<i>30%</i></p>
 							<p>What------<i>30%</i></p>
 						</div>
 					</div>
 				</div>
-
+				<!-- 这里我们就命名成banner-side就行了，因为右边没内容了 -->
 				<div class="title-top">
-					<h1><big>A</big>BOUT</h1>
+					<h1><big>A</big>BOUT</h1>   <!-- 不要用h1噢，h1用在主标题的位置 -->
 					<h1><big>T</big>ECHNOLOGE</h1>
 					<p>About technologe about technologe</p>
 					<p>about technologe</p>
@@ -54,13 +102,36 @@
 					</div>
 				</div>
 			</div>
+			<!-- 这里是下面的区域，我就命名成news了哈，你也可以用你觉得合适的单词，原谅我的英语不好 -_-
+				以区域命名，然后第二层，第三层...再以区域命名。
+				如下，news-content,news-desc(描述,我觉得有更好的单词替代desc)
+			 -->
+			<!-- 新添内容 -->
+			<div class="news">
+				<div class="news-content">
+					<div class="news-title"></div>	
+					<!-- 你写这里，感觉到了title的使用频率了吧，
+						你看我的，加上前缀，大胆的写上title,嘿嘿 -->
+					<!-- /.news-title -->
+					<div class="news-content"></div>
+					<!-- /.news-content -->
+				</div>
+				<!-- /.news-content -->
+				<div class="news-desc">
+					<!-- 这里面就和前面类似了 -->
+				</div>
+				<!-- /.news-desc -->
+			</div>
+			<!-- /.news -->
+			<!-- ./新添内容 -->
+
 			<div class="container-down">
 				<div class="content-left">
 					<div class="title-down">
 						<i>THE</i>
-						<h1>TECHNOLOGE</br>
+						<h1>TECHNOLOGE<br>
 		    			      OF FRONT
-		    			</br><small>前端技术领域</small></h1>
+		    			<br><small>前端技术领域</small></h1>
 					</div>
 					<div class="article-down">
 						<h1>前</h1>
@@ -96,8 +167,9 @@
 						<div class="corner-left">
 							<h1>0</h1>
 							<div></div>
-							<i>ONE TOW</br>THREE FORE FIVE</i>		    				
-							<p>hello word hello word </br>hello word</p>
+							<i>ONE TOW<br>THREE FORE FIVE</i>		 
+							<!-- br标签写错了噢 (-_-) ,我给你改过来了，这两种方式都可以-->    				
+							<p>hello word hello word <br />hello word</p>
 
 						</div>
 						<div class="corner-right">
@@ -112,6 +184,58 @@
 				</div>
 				<span>ife.baidu.com</span>
 			</div>
+		</div>
 	</body>
-
+	
 </html>
+<!-- 最后你看到我的div里面都有注释这些，
+其实我是用zen coding的写法，sublime里面插件叫做 emmet,
+你可以看看hbuilder有没有这个插件
+比如：
+	div.box>div.box-content+div.box-side|c   （写完一按tab键，就生成代码，如下：） -->
+	<div class="box">
+		<div class="box-content"></div>
+		<!-- /.box-content -->
+		<div class="box-side"></div>
+		<!-- /.box-side -->
+	</div>
+	<!-- /.box -->
+
+<!-- 这里div.box就是加上一个class为box,
+div#box，就是加上id咯，
+> 代表写他的后代元素，+ 兄弟元素 
+|c  代表加上注释，这样有逼格
+so easy 吧！，
+我要放大招了哈
+-->
+
+<div class="box">
+	<ul>
+		<li class="box-item box-item-1"><a href="">测试标题1</a></li>
+		<!-- /.box-item box-item-1 -->
+		<li class="box-item box-item-2"><a href="">测试标题2</a></li>
+		<!-- /.box-item box-item-2 -->
+		<li class="box-item box-item-3"><a href="">测试标题3</a></li>
+		<!-- /.box-item box-item-3 -->
+		<li class="box-item box-item-4"><a href="">测试标题4</a></li>
+		<!-- /.box-item box-item-4 -->
+		<li class="box-item box-item-5"><a href="">测试标题5</a></li>
+		<!-- /.box-item box-item-5 -->
+	</ul>
+</div>
+<!-- /.box -->
+<!-- 上面是不是很多，
+但是下面这一句话，就能生成下面的代码，简单吧，比直接写快吧。
+
+div.box>ul>li.box-item.box-item-$*5>a{测试标题$}|c 
+
+box-item-$ ,这个 $ 会自动根据个数，生成 1，2，3，4，5
+*5  代表重复5次
+{}  代表里面内容是什么
+-->
+
+
+<!-- 核心内容就这些，
+其他的你可以去网上看看教程 -->
+
+
