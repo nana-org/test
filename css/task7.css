@@ -50,9 +50,6 @@ a:hover{
 	-moz-transition: all .4s;
 	-webkit-transition: all .4s;
 }
-/*.nav ul li:hover{
-	border-bottom: 4px solid #e74f4d;
-}*/
 .nav ul li:last-child a{
 	color: #e74f4d;
 }
