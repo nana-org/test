@@ -1,5 +1,54 @@
+/* 重置样式 */
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  line-height: 1.4;
+  color: #7A7768;
+  font-family: arial;
+  font-size: 16px;
+}
+input,
+textarea,
+select {
+  font-size: 16px;
+  font-size: 100%;
+  font-family: arial;
+  font-family: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+form {
+  margin: 0;
+  padding: 0;
+}
+h4,
+h5,
+h6 {
+  font-size: 1em;
+}
+ul,
+ol {
+  padding-left: 0;
+  list-style-type: none;
+}
+img {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
 *{
-	padding: 0;
+	padding: 0;		/* 最近看了篇帖子，说这种用法其实是不好的，我给你发一个重置样式的，在上面 */
     margin: 0;
     font-family: "微软雅黑";
 }
@@ -113,7 +162,8 @@ a:hover{
 	margin-top: 12px;
 	font-size: 34px;
 }
-.section-first{
+/* 这里使用的first，second这些,少了还好，多了就得去页面里面数了，要保证别人查看你代码也能很清楚的看懂 */
+.section-first{		
 	width: 100%;
 	height: 250px;
 }
