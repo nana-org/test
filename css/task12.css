@@ -1,0 +1,205 @@
+body{
+	padding: 30px;
+}
+table,tr,td,input,ul,li{
+	padding: 0;
+	margin: 0;
+	font-family:"微软雅黑";
+}
+.table{
+	text-align:left;
+}
+.table th{
+	background: #000;
+	color: #fff;
+    font-weight: normal;
+}
+.table tr:nth-child(odd){
+	background: #ddd;
+}
+.table-mark{
+	color: #ff0000;
+}
+.input{
+	width: 100px;
+	margin: 20px auto;
+	transition: all .4s;
+	-ms-transition: all .4s;
+	-moz-transition: all .4s;
+	-webkit-transition: all .4s;
+}
+.input:focus{
+	width: 200px;
+}
+.banner{
+    width: 240px;
+	position:absolute;
+    overflow:hidden;
+}
+.banner input{
+	display: none;
+}
+.banner ul{
+	width:300%;
+	position: relative;
+	animation:turn-first 8s infinite;
+    -moz-animation:turn-first 8s infinite; 
+    -webkit-animation:turn-first 8s infinite; 
+    -o-animation:turn-first 8s infinite; 
+}
+.banner ul li{
+	width: 240px;
+	height: 100px;
+	float: left;
+	display: inline-block;
+	
+}
+.banner li:first-child{
+	background: #cd0000;
+}
+.banner li:nth-child(2){
+	background:#00c74c;
+}
+.banner li:last-child{
+	background: #eb6100;
+}
+.banner-key{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.banner-key label{
+    width: 20px;
+    height:20px;
+    color: #fff;
+    background: rgba(225,225,225,.4);
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+#img-first:checked~ul{
+	animation:turn-first 8s infinite;
+    -moz-animation:turn-first 8s infinite; 
+    -webkit-animation:turn-first 8s infinite; 
+    -o-animation:turn-first 8s infinite; 
+}
+#img-second:checked~ul{
+	animation:turn-second 8s infinite;
+    -moz-animation:turn-second 8s infinite; 
+    -webkit-animation:turn-second 8s infinite; 
+    -o-animation:turn-second 8s infinite; 
+}
+#img-third:checked~ul{
+	animation:turn-third 8s infinite;
+    -moz-animation:turn-third 8s infinite; 
+    -webkit-animation:turn-third 8s infinite; 
+    -o-animation:turn-third 8s infinite; 
+}
+@keyframes turn-first{
+	0% {left: 0;}
+	25%{left:0;}
+    33% {left:-100%;}
+    59%{left:-100%;}
+    64%{left:-200%;}
+    90%{left:-200%;}
+    100%{left:0;} 
+}
+@keyframes turn-second{
+	0% {left: -100%;}
+	25%{left:-100%;}
+    33% {left:-200%;}
+    59%{left:-200%;}
+    64%{left:0;}
+    90%{left:0;}
+    100%{left:-100%;} 
+}
+@keyframes turn-third{
+	0% {left: -200%;}
+	25%{left:-200%;}
+    33% {left:0;}
+    59%{left:0;}
+    64%{left:-100%;}
+    90%{left:-100%;}
+    100%{left:-200%;} 
+}
+@-moz-keyframes turn-first{
+	0% {left: 0;}
+	25%{left:0;}
+    33% {left:-100%;}
+    59%{left:-100%;}
+    64%{left:-200%;}
+    90%{left:-200%;}
+    100%{left:0;} 
+}
+@-moz-keyframes turn-second{
+	0% {left: -100%;}
+	25%{left:-100%;}
+    33% {left:-200%;}
+    59%{left:-200%;}
+    64%{left:0;}
+    90%{left:0;}
+    100%{left:-100%;} 
+}
+@-moz-keyframes turn-third{
+	0% {left: -200%;}
+	25%{left:-200%;}
+    33% {left:0;}
+    59%{left:0;}
+    64%{left:-100%;}
+    90%{left:-100%;}
+    100%{left:-200%;} 
+}
+@-webkit-keyframes turn-first{
+	0% {left: 0;}
+	25%{left:0;}
+    33% {left:-100%;}
+    59%{left:-100%;}
+    64%{left:-200%;}
+    90%{left:-200%;}
+    100%{left:0;} 
+}
+@-webkit-keyframes turn-second{
+	0% {left: -100%;}
+	25%{left:-100%;}
+    33% {left:-200%;}
+    59%{left:-200%;}
+    64%{left:0;}
+    90%{left:0;}
+    100%{left:-100%;} 
+}
+@-webkit-keyframes turn-third{
+	0% {left: -200%;}
+	25%{left:-200%;}
+    33% {left:0;}
+    59%{left:0;}
+    64%{left:-100%;}
+    90%{left:-100%;}
+    100%{left:-200%;} 
+}
+@-o-keyframes turn-first{
+	0% {left: 0;}
+	25%{left:0;}
+    33% {left:-100%;}
+    59%{left:-100%;}
+    64%{left:-200%;}
+    90%{left:-200%;}
+    100%{left:0;} 
+}
+@-o-keyframes turn-second{
+	0% {oleft: -100%;}
+	25%{left:-100%;}
+    33% {left:-200%;}
+    59%{left:-200%;}
+    64%{left:0;}
+    90%{left:0;}
+    100%{left:-100%;} 
+}
+@-o-keyframes turn-third{
+	0% {left: -200%;}
+	25%{left:-200%;}
+    33% {left:0;}
+    59%{left:0;}
+    64%{left:-100%;}
+    90%{left:-100%;}
+    100%{left:-200%;} 
+}
