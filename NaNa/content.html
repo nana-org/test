@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>呐呐---国际化品牌服务商</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="http://cdn.staticfile.org/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script>
+			$(function() {
+				$('#dowebok').fullpage({
+
+					loopBottom: true,
+					afterLoad: function(anchorLink, index) {
+
+						if (index == 3) {
+							$('.section3').find('p').fadeIn(2000);
+						}
+
+						if (index == 5) {
+							$('.section5').find('p').fadeIn(2000);
+						}
+
+					},
+					onLeave: function(index, direction) {
+						if (index == 3) {
+							$('.section3').find('p').fadeOut(2000);
+						}
+
+						if (index == 5) {
+							$('.section5').find('p').fadeOut(2000);
+						}
+
+					}
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+		<!--顶部导航-->
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+					<a class="navbar-brand brand" href="#"><big>呐呐</big>国际化企业品牌服务商</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">CRM协作<span class="sr-only">(current)</span></a></li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">品牌国际化<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Google推广</a></li>
+								<li><a href="#">数字内容营销</a></li>
+								<li><a href="#">SNS社会化媒体</a></li>
+								<li><a href="#">HD社交视频推广</a></li>
+
+							</ul>
+						</li>
+						<li><a href="#">定价</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+
+						<li><a href="#"><button class="btn btn-primary" type="button">登陆</button> </a> </li>
+						<li><a href="#"><button class="btn btn-success" type="button" data-toggle="modal" data-target="#mymodal-data">注册</button></a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 模态弹出窗内容 -->
+<div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+					<h3 class="modal-title text-center">呐呐</h3>
+					<h4 class="modal-title text-center">国际品牌，从此开始</h4>
+					<div class="input-group center-block">
+						<input type="text" class="form-control" placeholder="请输入注册邮箱" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group center-block">
+						<input type="text" class="form-control" placeholder="请输入注册密码" aria-describedby="basic-addon1">
+					</div>
+					<div class="input-group center-block">
+						<div class="col-sm-6  verify">
+							<input type="text" class="form-control" placeholder="请输入图片验证码" aria-describedby="basic-addon1">
+
+						</div>
+						<div class="col-sm-6">
+
+							<img src="img/house.png" alt="" width="180px" height="36px" />
+
+						</div>
+
+					</div>
+					<p class="text-center">点击注册，即同意我们的<a href="">用户服务条款</a></p>
+					<button type="button" class="btn btn-primary  center-block">立即免费注册</button>
+
+		</div>
+	</div>
+</div>
+		<!--顶部导航结束-->
+		<!--主要内容-->
+
+		<div id="dowebok">
+			<div class="section section1">
+				<h3 class="text-center">业界领先的国际化企业品牌服务商</h3>
+				<h3 class="text-center">重新定义你的国际品牌</h3>
+				<div class="re-content">
+					<h3 class="text-center">品牌国际化</h3>
+					<p class="text-center">开源的CRM协作系统，两大企业展示系统，四大海外推广维度。</p>
+					<p class="text-center">从内部深化企业国际化进程，只为更高效的团队，只做更精准，更有效的海外推广。</p>
+				</div>
+				<img src="img/icon.png" alt="请向下" class="center-block" />
+				<img src="img/icon.png" alt="请向下" class="center-block" />
+			</div>
+			<div class="section section2">
+				<img src="img/icon.png" alt="请向下" class="center-block icon" />
+				<img src="img/icon.png" alt="请向下" class="center-block icon" />
+			</div>
+			<div class="section section3">
+				<div class="container summary">
+					<div class="row" id="summary-container">
+						<div class="col-md-6">
+							<img src="img/page-1.png" alt="关系图" width="560px" class="center-block" />
+						</div>
+						<div class="col-md-6">
+							<div class="container-bar">
+
+								<h1 class="text-center">CRM协作系统</h1>
+
+								<p>呐呐CRM系统源于硅谷最前沿的合弄制管理模式，合弄制是一种具有严格的层级同时又扁平化的管理模式，能最大程度地发挥每个人的能力、降低管理者的负担。</p>
+
+								<p>呐呐CRM系统是中国领先的Sass客户关系管理平台————只需登录网页即可使用，同时采用云端处理技术，最大程度地保障您的数据安全。<a href="">了解更多</a></p>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<img src="img/icon.png" alt="请向下" class="center-block icon" />
+
+			</div>
+			<div class="section section4">
+				<div class="container summary">
+					<div class="row" id="summary-container">
+
+						<div class="col-md-6">
+							<div class="container-bar">
+
+								<h1 class="text-center">CRM网站系统</h1>
+
+								<p>呐呐CRM网站系统————基于Yii自主开发的专业外贸CMS系统，Yii框架是当今流行的PHP框架之一，稳定、安全，能有效的预防SQL注入和跨站点脚本攻击。</p>
+
+								<p>完全自主的数据统计功能：访问设备、访问量、访问人数、全球地图统计、访问时间、网站访问记录、用户ip、用户国家-省份-城市。让您了解用户的每一个行为。</p>
+								<p>询盘统计功能：当您网站有询盘时，将会实时发送邮件提醒您，让您不在为错过询盘而烦恼。<a href="">了解更多</a></p>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+							<img src="img/page-2.png" alt="关系图" width="560px" class="center-block" />
+						</div>
+					</div>
+				</div>
+				<img src="img/icon.png" alt="请向下" class="center-block icon" />
+
+			</div>
+			<div class="section section5">
+				<div class="container summary">
+					<div class="row" id="summary-container">
+						<div class="col-md-6">
+							<img src="img/page-3.png" alt="关系图" width="560px" class="center-block" />
+						</div>
+						<div class="col-md-6">
+							<div class="container-bar">
+
+								<h1 class="text-center">GoogleDSP推广</h1>
+
+								<p>呐呐DSP广告管理</p>
+
+								<p>基于DoubleClick数字广告管理平台，改善并简化在线广告投放，能够有效的管理复杂的全球工业品B端受众群体，精准地发现拥有高质量的目标受众的媒体最大化广告的投资回报率。</p>
+								<p><a href="">了解更多</a></p>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<img src="img/icon.png" alt="请向下" class="center-block icon" />
+
+			</div>
+			<div class="section section6">
+				<div class="container summary">
+					<div class="row" id="summary-container">
+
+						<div class="col-md-6">
+							<div class="container-bar">
+
+								<h1 class="text-center">数字内容营销</h1>
+
+								<p>呐呐数字内容营销，杜绝黑帽技术，用原创获得高质量的外链。</p>
+
+								<p>企业B端产品在全球不同区域拥有不同的专业论坛、媒体平台。呐呐积累了大量此类资源，让您的产品直达专业用户。</p>
+								<p><a href="">了解更多</a></p>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+							<img src="img/page-4.png" alt="关系图" width="560px" class="center-block" />
+						</div>
+					</div>
+				</div>
+				<img src="img/icon.png" alt="请向下" class="center-block icon" />
+			</div>
+			<div class="section section7">
+				<h3 class="text-center">没有极客的产品，就没有极客的喜爱</h3>
+				<h2 class="text-center">没有极致的文案，就没有极致的SNS</h2>
+				<img src="img/alien.png" alt="外星人" class="center-block" width="40px" />
+				<img src="img/down.png" alt="向下" class="center-block" width="30px" />
+
+			</div>
+			<div class="section section8">
+
+				<div class="container summary">
+					<div class="row" id="summary-container">
+						<div class="col-md-6">
+							<img src="img/process.png" alt="关系图" width="560px" class="center-block" />
+						</div>
+						<div class="col-md-6">
+							<div class="container-bar">
+
+								<h1 class="text-center">SNS社会化媒体</h1>
+
+								<p>呐呐社会化媒体营销，专业的社会化媒体团队，积累了大量行业的专家，领袖，以专业的态度获得行业专家的背书</p>
+
+								<p>呐呐社会化媒体推团队，拥有Facebook、Twitter、Linkedin、Instgram、Pinterest等社交网络的丰富运营经验：网红社交、图片传播、领袖认可、Tag传播等。</p>
+								<p><a href="">了解更多</a></p>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<img src="img/down.png" alt="请向下" class="center-block icon" />
+
+			</div>
+			<div class="section section9">
+				<div class="container summary">
+					<img src="img/box.png" alt="talk box" class="center-block" />
+					<h3 class="text-center">一群无人机极客的HD视频之路</h3>
+					<h2 class="text-center">无人机视频团队中最懂HD高清视频推广的</h2>
+					<p class="text-right"><a href="">了解更多</a></p>
+					<img src="img/alien.png" alt="外星人" class="center-block" width="40px" />
+					<img src="img/down.png" alt="向下" class="center-block" width="30px" />
+				</div>
+
+			</div>
+			<div class="section section10">
+				<div class="container summary">
+					
+					<div class="row" id="summary-container">
+
+						<div class="col-md-6">
+							<div class="container-bar">
+
+								<h1 class="text-center">HD社交视频推广</h1>
+
+								<p>手绘视频，企业展示视频，我们只为做好视频。</p>
+								<p>红人营销，视频SEO，多视频分享渠道————这只是科技，我们采用自动化分配黑科技，精准控制视频、文案、图片的比例。</p>
+								<p>无论是文案还是视频实现单点突破，带动SNS同步扩散。</p>
+								<p><a href="">了解更多</a></p>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+							<img src="img/UAV.png" alt="关系图" width="400px" class="center-block" />
+						</div>
+					</div>
+				
+				<h3 class="text-center"><img src="img/alien.png" alt="外星人" />小米无人机————足以说明我们的专业</h3>
+				<div class="bottom">
+					<ul>
+						<li><a href="">关于呐呐</a></li>
+						<li><a href="">Join Us</a></li>
+						<li><a href="">CRM协作</a></li>
+						<li><a href="">品牌国际化</a></li>
+						<li><a href="">定价</a></li>
+					</ul>
+					<p><i class="fa fa-copyright" aria-hidden="true"></i>（天津）科技有限责任公司</p>
+				</div>
+          </div>
+			</div>
+
+		</div>
+
+	</body>
+
+	<script src="js/bootstrap.min.js"></script>
+
+</html>
